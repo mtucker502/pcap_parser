@@ -77,7 +77,11 @@ def main():
     source = sys.argv[1]
 
     stats = {}
-    for x in range(len(sys.argv)-2, len(sys.argv)):
+    capture_count = 1
+    if len(sys.argv) > 3:
+        capture_count = len(sys.argv)-2
+
+    for x in range(len(sys.argv)-capture_count, len(sys.argv)):
         print "Examining %s" % (sys.argv[x])
         pcap = pcap_parser(sys.argv[x],source)
         pcap.psummary()
