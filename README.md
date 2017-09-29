@@ -10,7 +10,7 @@ If multiple files are provided they will be diffed to show packet loss between t
 This example is a ftp-data flow so data is sent from the server to the client.
 
 ```bash
-$ python pcap_parser.py 1.1.1.1 sgi/9252017_Test#1_FTP_Server_13-58-24-CT.pcap sgi/9252017_Test#1_FTP_SGi_13-58-24-CT.pcapng
+$ python pcap_parser.py 1.1.1.1 server.pcap client.pcapng
 
 ---------------
 
